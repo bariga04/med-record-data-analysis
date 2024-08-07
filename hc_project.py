@@ -25,7 +25,7 @@ cursor.execute('''
 connector.commit()
 
 #insert specific path to csv file
-dataframe = pd.read_csv('/Users/ramariga/Desktop/medical_costs.csv')
+dataframe = pd.read_csv('medical_costs.csv')
 dataframe.to_sql('hc_data', connector, if_exists = 'replace', index = False)
 
 
